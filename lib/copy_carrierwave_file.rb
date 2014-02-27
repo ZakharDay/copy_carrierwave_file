@@ -8,10 +8,5 @@ module CopyCarrierwaveFile
 
   def copy_carrierwave_versions(original_resource, destination_resource, mount_point)
     CopyCarrierwaveFile::CopyFileService.new(original_resource, destination_resource, mount_point, true)
-
-    # versions.each do |version|
-      # logger.debug version
-      # CopyCarrierwaveFile::CopyFileService.new(original_resource, destination_resource, mount_point, version).set_file
-    # end
   end
 end
